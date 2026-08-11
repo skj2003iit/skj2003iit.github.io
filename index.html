@@ -1,188 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shobhit Jain | Academic Profile</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <style>
-    :root {
-      --primary-color: #0366d6;
-      --text-color: #24292e;
-      --bg-color: #f6f8fa;
-      --card-bg: #ffffff;
-      --border-color: #e1e4e8;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shobhit Jain</title>
+    <style>
+        /* Simple, human-made academic layout styling */
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #222;
+            line-height: 1.6;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fcfcfc;
+        }
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      color: var(--text-color);
-      background-color: var(--bg-color);
-      margin: 0;
-      padding: 0;
-    }
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
 
-    .container {
-      max-width: 850px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
+        h2 {
+            font-size: 1.4rem;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 35px;
+            color: #333;
+        }
 
-    .profile-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      align-items: center;
-      margin-bottom: 30px;
-    }
+        a {
+            color: #0056b3;
+            text-decoration: underline;
+        }
 
-    .profile-info {
-      flex: 1;
-      min-width: 280px;
-    }
+        a:hover {
+            color: #003366;
+        }
 
-    h1 {
-      margin: 0 0 10px 0;
-      font-size: 2rem;
-    }
+        .profile-container {
+            display: flex;
+            gap: 25px;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
 
-    .subtitle {
-      font-size: 1.1rem;
-      color: #586069;
-      margin-bottom: 15px;
-    }
+        .profile-pic {
+            width: 160px;
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
 
-    .social-links {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-      margin-top: 15px;
-    }
+        .bio-text {
+            flex: 1;
+        }
 
-    .social-links a {
-      color: var(--text-color);
-      text-decoration: none;
-      font-size: 1rem;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 12px;
-      border: 1px solid var(--border-color);
-      border-radius: 6px;
-      transition: background-color 0.2s;
-    }
+        .logos-container {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin: 15px 0 20px 0;
+        }
 
-    .social-links a:hover {
-      background-color: var(--bg-color);
-      color: var(--primary-color);
-    }
+        .institute-logo {
+            height: 80px;
+            width: auto;
+        }
 
-    section {
-      background: var(--card-bg);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 25px 30px;
-      margin-bottom: 25px;
-    }
+        ul, ol {
+            padding-left: 20px;
+        }
 
-    h2 {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 8px;
-      margin-top: 0;
-      color: var(--primary-color);
-    }
+        li {
+            margin-bottom: 8px;
+        }
 
-    ul {
-      padding-left: 20px;
-    }
+        .quote-box {
+            text-align: center;
+            font-style: italic;
+            margin: 30px 0;
+            color: #555;
+            font-size: 0.95rem;
+        }
 
-    li {
-      margin-bottom: 8px;
-    }
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+            color: #555;
+        }
 
-    a {
-      color: var(--primary-color);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #586069;
-    }
-  </style>
+        @media (max-width: 600px) {
+            .profile-container {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <div class="container">
-    
-    <!-- Profile Header -->
-    <header class="profile-card">
-      <div class="profile-info">
+    <header>
         <h1>Shobhit Jain</h1>
-        <p class="subtitle">Ph.D. Student in Computer Science & Engineering</p>
-        <p><i class="fa-solid fa-building-columns"></i> IIT Hyderabad</p>
-        <p><i class="fa-solid fa-location-dot"></i> LAB 320, CSE Department, IIT Hyderabad</p>
-
-        <div class="social-links">
-          <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-          <a href="https://in.linkedin.com/in/shobhit-jain-83916a2bb" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-          <a href="mailto:cs25resch12001@iith.ac.in"><i class="fa-solid fa-envelope"></i> Email</a>
-          <a href="https://www.instagram.com/shaun2003_" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
-        </div>
-      </div>
     </header>
 
     <!-- Bio Section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I am currently a Ph.D. student in the Department of Computer Science and Engineering at 
-        <a href="https://cse.iith.ac.in/" target="_blank">IIT Hyderabad</a>. Prior to this, I completed my B.Tech at 
-        <a href="https://www.iitbhilai.ac.in/index.php?pid=dept_cse" target="_blank">CSE, IIT Bhilai</a>. 
-        My work focuses on exploring Cryptography and other domains in Theoretical Computer Science.
-      </p>
+    <section id="bio" class="profile-container">
+        <!-- REPLACE 'profile.jpg' WITH YOUR ACTUAL PHOTO FILENAME -->
+        <img src="profile.jpg" alt="Shobhit Jain" class="profile-pic">
+        <div class="bio-text">
+            <p>
+                I'm currently a Ph.D Student at <a href="https://example.com/cse-iith">CSE, IIT Hyderabad</a>. 
+                Before that I completed my B.Tech. at <a href="https://example.com/cse-iitbhilai">CSE, IIT Bhilai</a>. 
+                Just exploring the field of Cryptography and other domains in Theoretical CS.
+            </p>
+        </div>
     </section>
 
-    <!-- Education & Research -->
+    <!-- Education & Experience -->
     <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Ph.D. in Computer Science & Engineering</strong> – IIT Hyderabad (Current)</li>
-        <li><strong>B.Tech in Computer Science & Engineering</strong> – IIT Bhilai</li>
-      </ul>
+        <h2>Education & Experience</h2>
+        
+        <div class="logos-container">
+            <!-- REPLACE 'iit_bhilai.png' AND 'iit_hyderabad.png' WITH YOUR ACTUAL LOGO FILENAMES -->
+            <img src="iit_bhilai.png" alt="IIT Bhilai Logo" class="institute-logo">
+            <img src="iit_hyderabad.png" alt="IIT Hyderabad Logo" class="institute-logo">
+        </div>
+
+        <ul>
+            <li>Class 12th, Gayatri Public School, Shastripuram, Agra (2019-20)</li>
+            <li>B.Tech, <a href="https://example.com/cse-iitbhilai">CSE, IIT Bhilai</a> (2021-25)</li>
+            <li>
+                Ph.D, <a href="https://example.com/cse-iith">CSE, IIT Hyderabad</a> (2025-) 
+                under the supervision of Dr. <a href="https://example.com/nitin-saurabh">Nitin Saurabh</a> 
+                and Prof. <a href="https://example.com/subrahmanyam-kalyanasundaram">Subrahmanyam Kalyanasundaram</a>
+            </li>
+        </ul>
     </section>
 
-    <section id="interests">
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Theoretical Computer Science</li>
-        <li>Quantum Computing, Cryptography & Complexity</li>
-      </ul>
+    <!-- Research Interests -->
+    <section id="research">
+        <h2>Research Interest</h2>
+        <ol>
+            <li>
+                <strong>Computer Science</strong>
+                <ul>
+                    <li>All aspects of Theoretical Computer Science but mainly in Cryptography, Computational Complexity Theory and Quantum Computing.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Mathematics</strong>
+                <ul>
+                    <li>Combinatorics, Number Theory, Special functions in Mathematical Analysis and Ramanujan's Notebooks.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <div class="quote-box">
+            "I don't know in the next life if i'll be a math guy,<br>
+            but in this life i'll always be a math guy !!"<br>
+            — me
+        </div>
     </section>
 
-    <!-- Publications / Projects Section -->
+    <!-- Achievements -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>AIR 18 GATE(MA) 2025</li>
+            <li>AIR 90 GATE(MA) 2024</li>
+            <li>AIR 3935 IIT-JEE (Advanced) 2021</li>
+            <li>AIR 4483 JEE (Mains) 2021</li>
+        </ul>
+    </section>
+
+    <!-- Publications -->
     <section id="publications">
-      <h2>Publications & Research Projects</h2>
-      <p><em>Selected publications and preprints will be updated here soon.</em></p>
+        <h2>Publications</h2>
+        <p><a href="https://example.com/rmm">Romanian Mathematical Magazine</a> Problems and Solutions Corner</p>
+        <ul>
+            <li><a href="https://example.com/rmm-48">48th RMM Spring Edition</a> (Apr. 2026)</li>
+            <li><a href="https://example.com/rmm-2701-2800">2701-2800</a> 28th RMM-CALCULUS-MARATHON (Feb. 2026)</li>
+            <li><a href="https://example.com/rmm-47">47th RMM Winter Edition</a> (Nov. 2025)</li>
+            <li><a href="https://example.com/rmm-2601-2700">2601-2700</a> 27th RMM-CALCULUS-MARATHON (Aug. 2025)</li>
+            <li><a href="https://example.com/rmm-2501-2600">2501-2600</a> 26th RMM-CALCULUS-MARATHON (Jan. 2025)</li>
+        </ul>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer / Contact Information -->
     <footer>
-      <p>&copy; Shobhit Jain | Hosted on GitHub Pages</p>
+        <p>LAB 320<br>
+        CSE Department, IIT Hyderabad</p>
+        <p>Mail: <a href="mailto:cs25resch12001@iith.ac.in">cs25resch12001@iith.ac.in</a></p>
+        <p>
+            <a href="https://linkedin.com/in/dummy">LinkedIn</a> | 
+            <a href="https://instagram.com/dummy">Instagram</a>
+        </p>
     </footer>
-
-  </div>
 
 </body>
 </html>
